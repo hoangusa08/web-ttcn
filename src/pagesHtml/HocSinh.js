@@ -8,7 +8,7 @@ export default function XemDiem() {
     function Main() {
         const [count, setCount] = useState(0)
         useEffect(() => {
-            Axios.get("https://mysql-server-heroku.herokuapp.com/auth/HS", {
+            Axios.get("https://web-ttcn.herokuapp.com/auth/HS", {
                 headers: {
                     "x-access-token": JSON.parse(localStorage.getItem("token"))
                 }
@@ -18,10 +18,10 @@ export default function XemDiem() {
             });
             if (auth === "OK") {
                 const temp = localStorage.getItem("user").split('"').join('')
-                Axios.put("https://mysql-server-heroku.herokuapp.com/HS", { id: temp }).then((response) => {
+                Axios.put("https://web-ttcn.herokuapp.com/HS", { id: temp }).then((response) => {
                     setUser(response.data[0].Hoten)
                 });
-                Axios.get(`https://mysql-server-heroku.herokuapp.com/MonFromMa/${temp}`).then((response1) => {
+                Axios.get(`https://web-ttcn.herokuapp.com/MonFromMa/${temp}`).then((response1) => {
                     setMH(response1.data)
                 });
             }

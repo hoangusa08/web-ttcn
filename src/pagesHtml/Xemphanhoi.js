@@ -11,7 +11,7 @@ export default function Post() {
     function Main() {
         const [count, setCount] = useState(0)
         useEffect(() => {
-            Axios.get("https://mysql-server-heroku.herokuapp.com/auth/GV", {
+            Axios.get("https://web-ttcn.herokuapp.com/auth/GV", {
                 headers: {
                     "x-access-token": JSON.parse(localStorage.getItem("token"))
                 }
@@ -21,13 +21,13 @@ export default function Post() {
             });
             if (auth === "OK") {
                 const temp = localStorage.getItem("user").split('"').join('')
-                Axios.put("https://mysql-server-heroku.herokuapp.com/GV", { id: temp }).then((response) => {
+                Axios.put("https://web-ttcn.herokuapp.com/GV", { id: temp }).then((response) => {
                     setName(response.data[0].Hoten)
-                    Axios.put("https://mysql-server-heroku.herokuapp.com/getFeedback", { MaGV: temp, MaMH: response.data[0].MaMH }).then((response2) => {
+                    Axios.put("https://web-ttcn.herokuapp.com/getFeedback", { MaGV: temp, MaMH: response.data[0].MaMH }).then((response2) => {
                         setFeedback(response2.data)
                     })
                 });
-                Axios.put("https://mysql-server-heroku.herokuapp.com/getLop", { MaGV: temp }).then((response1) => {
+                Axios.put("https://web-ttcn.herokuapp.com/getLop", { MaGV: temp }).then((response1) => {
                     setClass(response1.data)
                 })
             }

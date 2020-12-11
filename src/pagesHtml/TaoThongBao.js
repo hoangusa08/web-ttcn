@@ -10,7 +10,7 @@ export default function CreatePost() {
     function Main() {
         const [count, setCount] = useState(0)
         useEffect(() => {
-            Axios.get("https://mysql-server-heroku.herokuapp.com/auth/admin", {
+            Axios.get("https://web-ttcn.herokuapp.com/auth/admin", {
                 headers: {
                     "x-access-token": JSON.parse(localStorage.getItem("token"))
                 }
@@ -20,7 +20,7 @@ export default function CreatePost() {
             });
             if (auth === "OK") {
                 const temp = localStorage.getItem("user").split('"').join('')
-                Axios.put("https://mysql-server-heroku.herokuapp.com/admin", { id: temp }).then((response) => {
+                Axios.put("https://web-ttcn.herokuapp.com/admin", { id: temp }).then((response) => {
                     setUser(response.data[0].Username)
                 });
             }
@@ -28,7 +28,7 @@ export default function CreatePost() {
     }
     Main()
     const submitpost = () => {
-        Axios.post('https://mysql-server-heroku.herokuapp.com/create', { title: title, text: text })
+        Axios.post('https://web-ttcn.herokuapp.com/create', { title: title, text: text })
         window.location.reload()
     };
 
