@@ -11,7 +11,7 @@ export default function Login() {
     let history = useHistory();
     const login = () => {
         if (username.substring(0, 2) === "AD") {
-            Axios.post('http://localhost:3001/login/admin', { username: username, userpass: userpass }).then((response) => {
+            Axios.post('https://mysql-server-heroku.herokuapp.com/login/admin', { username: username, userpass: userpass }).then((response) => {
                 if (!response.data.auth) {
                     setStatus(response.data.message)
                 }
@@ -23,7 +23,7 @@ export default function Login() {
             })
         }
         else if (username.substring(0, 2) === "GV") {
-            Axios.post('http://localhost:3001/login/GV', { username: username, userpass: userpass }).then((response) => {
+            Axios.post('https://mysql-server-heroku.herokuapp.com/login/GV', { username: username, userpass: userpass }).then((response) => {
 
                 if (!response.data.auth) {
                     setStatus(response.data.message)
@@ -36,7 +36,7 @@ export default function Login() {
             })
         }
         else if (username.substring(0, 2) === "HS") {
-            Axios.post('http://localhost:3001/login/HS', { username: username, userpass: userpass }).then((response) => {
+            Axios.post('https://mysql-server-heroku.herokuapp.com/login/HS', { username: username, userpass: userpass }).then((response) => {
 
                 if (!response.data.auth) {
                     setStatus(response.data.message)

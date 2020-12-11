@@ -8,7 +8,7 @@ export default function MainPage() {
     let history = useHistory();
     useEffect(() => {
         localStorage.clear();
-        Axios.get("http://localhost:3001/get").then((data) => {
+        Axios.get("https://mysql-server-heroku.herokuapp.com/get").then((data) => {
             console.log(data.data)
             setList(data.data)
         });

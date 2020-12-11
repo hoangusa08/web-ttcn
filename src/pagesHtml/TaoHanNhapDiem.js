@@ -8,7 +8,7 @@ export default function TaoHanNHapDiem() {
     function Main() {
         const [count, setCount] = useState(0)
         useEffect(() => {
-            Axios.get("http://localhost:3001/auth/admin", {
+            Axios.get("https://mysql-server-heroku.herokuapp.com/auth/admin", {
                 headers: {
                     "x-access-token": JSON.parse(localStorage.getItem("token"))
                 }
@@ -18,23 +18,23 @@ export default function TaoHanNHapDiem() {
             });
             if (auth === "OK") {
                 const temp = localStorage.getItem("user").split('"').join('')
-                Axios.put("http://localhost:3001/admin", { id: temp }).then((response) => {
+                Axios.put("https://mysql-server-heroku.herokuapp.com/admin", { id: temp }).then((response) => {
                     setUser(response.data[0].Username)
                 });
             }
         }, [count]);
     }
     const Khoagk = () =>{
-        Axios.post("http://localhost:3001/khoagk", {khoa: 1})
+        Axios.post("https://mysql-server-heroku.herokuapp.com/khoagk", {khoa: 1})
     }
     const Mogk = () =>{
-        Axios.post("http://localhost:3001/khoagk", {khoa: 0})
+        Axios.post("https://mysql-server-heroku.herokuapp.com/khoagk", {khoa: 0})
     }
     const Khoack = () =>{
-        Axios.post("http://localhost:3001/khoack", {khoa: 1})
+        Axios.post("https://mysql-server-heroku.herokuapp.com/khoack", {khoa: 1})
     }
     const Mock = () =>{
-        Axios.post("http://localhost:3001/khoack", {khoa: 0})
+        Axios.post("https://mysql-server-heroku.herokuapp.com/khoack", {khoa: 0})
     }
     Main()
 

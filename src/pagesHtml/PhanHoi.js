@@ -10,7 +10,7 @@ export default function PhanHoi() {
     function Main() {
         const [count, setCount] = useState(0)
         useEffect(() => {
-            Axios.get("http://localhost:3001/auth/HS", {
+            Axios.get("https://mysql-server-heroku.herokuapp.com/auth/HS", {
                 headers: {
                     "x-access-token": JSON.parse(localStorage.getItem("token"))
                 }
@@ -21,7 +21,7 @@ export default function PhanHoi() {
             if (auth === "OK") {
                 const temp = localStorage.getItem("user").split('"').join('')
                 setMaHS(temp)
-                Axios.put("http://localhost:3001/HS", { id: temp }).then((response) => {
+                Axios.put("https://mysql-server-heroku.herokuapp.com/HS", { id: temp }).then((response) => {
                     setUser(response.data[0].Hoten)
                 });
             }
@@ -29,7 +29,7 @@ export default function PhanHoi() {
     }
     Main()
     const submitfeedback = () => {
-        Axios.post('http://localhost:3001/createFeedback', { subject: subject, text: text, maHS: maHS })
+        Axios.post('https://mysql-server-heroku.herokuapp.com/createFeedback', { subject: subject, text: text, maHS: maHS })
         window.location.reload()
     };
 
