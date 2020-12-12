@@ -70,7 +70,7 @@ export default function TaoHanNHapDiem() {
     }
     else {
         return (
-            <div>GET OUT </div>
+            <div></div>
         )
     }
 }

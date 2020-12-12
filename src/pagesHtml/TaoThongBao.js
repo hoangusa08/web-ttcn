@@ -58,7 +58,7 @@ export default function CreatePost() {
     }
     else {
         return (
-            <div>GET OUT </div>
+            <div></div>
         )
     }
 }

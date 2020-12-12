@@ -65,7 +65,7 @@ export default function PhanHoi() {
     }
     else {
         return (
-            <div>GET OUT </div>
+            <div></div>
         )
     }
 }

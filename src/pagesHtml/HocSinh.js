@@ -68,7 +68,7 @@ export default function XemDiem() {
     }
     else {
         return (
-            <div>GET OUT </div>
+            <div></div>
         )
     }
 }

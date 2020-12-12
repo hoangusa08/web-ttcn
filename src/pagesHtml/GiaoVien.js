@@ -46,7 +46,7 @@ export default function GiaoVien() {
                         <a href="/trangchu">Đăng Xuất</a>
                     </div>
 
-                    <div className='clear'><a></a></div>
+                    <div className='clear'></div>
 
                     <div id='nhapdiem'>
                         <p className='nhapdiem_tieude'>Nhập điểm cho lớp: </p>
@@ -133,7 +133,7 @@ export default function GiaoVien() {
     }
     else {
         return (
-            <div>GET OUT </div>
+            <div></div>
         )
     }
 }
