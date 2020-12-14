@@ -19,9 +19,7 @@ export default function MainPage() {
                 <div className="Link">
                     <h2>TRƯỜNG THPT PHẠM VĂN ĐỒNG</h2>                    
                     <div id='barright'>
-                        <a href="https://trankyphong.edu.vn/tin-giao-duc/">Tin giáo dục</a>
-                        <a href="https://trankyphong.edu.vn/tuyen-sinh/">Tuyển sinh</a>
-                        <a href="https://trankyphong.edu.vn/">Liên hệ</a>
+                        <a href="https://www.facebook.com/thptphamvandong">fanpages</a>
                         <a href="/login">Đăng Nhập</a>
                     </div>
                 </div>
