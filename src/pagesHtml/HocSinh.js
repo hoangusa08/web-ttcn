@@ -49,6 +49,7 @@ export default function XemDiem() {
                                     <th>Tên môn học</th>
                                     <th>Điểm giữa kỳ</th>
                                     <th>Điểm cuối kỳ</th>
+                                    <th>Điểm tb môn</th>
                                 </tr>
                                 {mh.map((val1) => {
                                     return (
@@ -56,6 +57,7 @@ export default function XemDiem() {
                                             <td>{val1.TenMH}</td>
                                             <td>{val1.DiemGK}</td>
                                             <td>{val1.DiemCK}</td>
+                                            <td>{(val1.DiemGK*2+val1.DiemCK*3)/5}</td>
                                         </tr>
                                     )
                                 })}

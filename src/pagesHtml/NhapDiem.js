@@ -75,6 +75,13 @@ export default function NhapDiem() {
                 setGK(response.data[0].gk)
                 setCK(response.data[0].ck)
             });
+            Axios.post('https://web-ttcn.herokuapp.com/luudiemGK', { diemHS: diemGK, vitri: vitriGK, malop: lopID, id: localStorage.getItem("user").split('"').join('') }).then((response) => {
+                setMark(response.data)
+            });
+            
+            Axios.post('https://web-ttcn.herokuapp.com/luudiemCK', { diemHS: diemCK, vitri: vitriCK, malop: lopID, id: localStorage.getItem("user").split('"').join('') }).then((response) => {
+                setMark(response.data)
+            });
 
         }, [count]);
     }
