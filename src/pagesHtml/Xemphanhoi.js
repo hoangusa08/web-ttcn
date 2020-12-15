@@ -31,6 +31,7 @@ export default function Post() {
                     setClass(response1.data)
                 })
             }
+            document.title = "Xem phản hồi";
         }, [count]);
     }
     Main()
