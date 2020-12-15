@@ -51,7 +51,6 @@ export default function Login() {
         else {
             setStatus("Bạn cần nhập Username")
         }
-        document.title = "Login";
     }
     return (
         <div>
