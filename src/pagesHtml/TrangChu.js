@@ -12,8 +12,6 @@ export default function MainPage() {
             console.log(data.data)
             setList(data.data)
         });
-        document.title = "Login";
-        //document.title = "Thpt Phạm Văn Đồng";
     }, []);
     return (
         <div>
