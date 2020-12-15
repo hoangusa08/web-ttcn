@@ -51,8 +51,10 @@ export default function Login() {
         else {
             setStatus("Bạn cần nhập Username")
         }
-        document.title = "login";
     }
+    useEffect(() => {
+        document.title = "login";
+    }, []);
     return (
         <div>
            <div className="bar">
