@@ -12,6 +12,7 @@ export default function MainPage() {
             console.log(data.data)
             setList(data.data)
         });
+        document.title = "Home Page";
     }, []);
     return (
         <div>
