@@ -52,9 +52,6 @@ export default function Login() {
             setStatus("Bạn cần nhập Username")
         }
     }
-    useEffect(() => {
-        document.title = "Login";
-    }, []);
     return (
         <div>
            <div className="bar">
