@@ -14,11 +14,7 @@ export default function MainPage() {
         });
     }, []);
     return (
-        
         <div>
-            <Helmet>
-             <title>{ TITLE }</title>
-            </Helmet>
             <div className="bar">
                 <div className="Link">
                     <h2>TRƯỜNG THPT PHẠM VĂN ĐỒNG</h2>                    
