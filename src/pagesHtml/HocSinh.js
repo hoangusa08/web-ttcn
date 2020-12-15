@@ -25,6 +25,7 @@ export default function XemDiem() {
                     setMH(response1.data)
                 });
             }
+            document.title = "Học Sinh";
         }, [count]);
     }
     Main()

@@ -32,6 +32,7 @@ export default function GiaoVien() {
                     setClass(response1.data)
                 })
             }
+            document.title = "Giáo Viên";
 
         }, [count]);
     }

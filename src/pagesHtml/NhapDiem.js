@@ -82,6 +82,7 @@ export default function NhapDiem() {
             Axios.post('https://web-ttcn.herokuapp.com/luudiemCK', { diemHS: diemCK, vitri: vitriCK, malop: lopID, id: localStorage.getItem("user").split('"').join('') }).then((response) => {
                 setMark(response.data)
             });
+            document.title = "Nhập Điểm";
 
         }, [count]);
     }
