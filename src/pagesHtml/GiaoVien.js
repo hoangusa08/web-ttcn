@@ -43,7 +43,7 @@ export default function GiaoVien() {
             <div>
                 <div className="bar">
                     <div id='barright'>
-                        <input type = "search" placeholder = "HS_..." onChange={settk(target.value)}></input>
+                        <input type = "search" placeholder = "HS_..." style = {{display="inline-block"}} onChange={settk(target.value)}></input>
                         <button onClick={() => { history.push(`/timkiem/${tk}`)}}>Search</button>
                         <a href="/xemphanhoi">Xem phản hồi</a>
                         <div id='real_name'>Giáo viên: {name}</div>
