@@ -10,6 +10,7 @@ import NhapDiem from './pagesHtml/NhapDiem'
 import HocSinh from './pagesHtml/HocSinh'
 import PhanHoi from './pagesHtml/PhanHoi'
 import XemPhanHoi from './pagesHtml/Xemphanhoi'
+import Timkiem from './pagesHtml/timkiem'
 import './App.css';
 
 export default function App() {
@@ -28,6 +29,7 @@ export default function App() {
           <Route path="/xemdiem" render={(props) => <HocSinh />} />
           <Route path="/phanhoi" render={(props) => <PhanHoi />} />
           <Route path="/xemphanhoi" render={(props) => <XemPhanHoi />} /> 
+          <Route path='/timkiem/:mshs' render={(props) => <Timkiem />} /> 
         </Switch>
         </Router>
     </>
