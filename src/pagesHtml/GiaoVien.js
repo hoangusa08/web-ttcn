@@ -43,8 +43,7 @@ export default function GiaoVien() {
             <div>
                 <div className="bar">
                     <div id='barright'>
-                        <input type = "text" placeholder = "HS_..." style = {{display="inline-block"}} onChange={settk(target.value)}></input>
-                        <button onClick={() => { history.push(`/timkiem/${tk}`)}}>Search</button>
+                        
                         <a href="/xemphanhoi">Xem phản hồi</a>
                         <div id='real_name'>Giáo viên: {name}</div>
                         <a href="/trangchu">Đăng Xuất</a>
@@ -61,6 +60,8 @@ export default function GiaoVien() {
                                 </div>
                             )
                         })}
+                        <input type = "text" placeholder = "HS_..." style = {{display="inline-block"}} onChange={settk(target.value)}></input>
+                        <button onClick={() => { history.push(`/timkiem/${tk}`)}}>Search</button>
                     </div>                      
                 </div>
 
