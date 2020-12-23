@@ -17,8 +17,6 @@ export default function MainPage() {
         <div>
             <div className="bar">
                 <div className="Link">
-                    <input type="text"></input>
-                    <button>Search</button>
                     <h2>TRƯỜNG THPT PHẠM VĂN ĐỒNG</h2>                    
                     <div id='barright'>
                         <a href="https://www.facebook.com/thptphamvandong">fanpages</a>

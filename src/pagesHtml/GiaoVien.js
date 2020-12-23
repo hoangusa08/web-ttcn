@@ -41,6 +41,8 @@ export default function GiaoVien() {
             <div>
                 <div className="bar">
                     <div id='barright'>
+                        <input type = "search" style = {{display: "inline-block"}}></input>
+                        <button style = {{display: "inline-block"}}>Search</button>
                         <a href="/xemphanhoi">Xem phản hồi</a>
                         <div id='real_name'>Giáo viên: {name}</div>
                         <a href="/trangchu">Đăng Xuất</a>
