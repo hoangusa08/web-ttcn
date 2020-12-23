@@ -24,7 +24,6 @@ export default function CreatePost() {
                     setUser(response.data[0].Username)
                 });
             }
-            document.title = "Tạo thông báo";
         }, [count]);
     }
     Main()

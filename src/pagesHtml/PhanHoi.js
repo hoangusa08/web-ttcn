@@ -25,7 +25,6 @@ export default function PhanHoi() {
                     setUser(response.data[0].Hoten)
                 });
             }
-            document.title = "Phản Hồi";
         }, [count]);
     }
     Main()

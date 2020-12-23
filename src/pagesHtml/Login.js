@@ -10,7 +10,6 @@ export default function Login() {
     localStorage.clear();
     let history = useHistory();
     const login = () => {
-        document.title = "login";
         if (username.substring(0, 2) === "AD") {
             Axios.post('https://web-ttcn.herokuapp.com/login/admin', { username: username, userpass: userpass }).then((response) => {
                 if (!response.data.auth) {
@@ -53,9 +52,6 @@ export default function Login() {
             setStatus("Bạn cần nhập Username")
         }
     }
-    useEffect(() => {
-        document.title = "login";
-    }, []);
     return (
         <div>
            <div className="bar">

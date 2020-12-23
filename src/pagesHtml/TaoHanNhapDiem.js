@@ -22,7 +22,6 @@ export default function TaoHanNHapDiem() {
                     setUser(response.data[0].Username)
                 });
             }
-            document.title = "Tạo Hạn Nhập Điểm";
         }, [count]);
     }
     const Khoagk = () =>{

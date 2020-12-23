@@ -6,7 +6,6 @@ export default function GiaoVien() {
     const [user, setUser] = useState("")
     const [name, setName] = useState("")
     const [auth, setAuth] = useState("")
-    const [tk, settk] = useState("")
     const [classList, setClass] = useState([]);
     let history = useHistory();
     function Main() {
@@ -33,7 +32,6 @@ export default function GiaoVien() {
                     setClass(response1.data)
                 })
             }
-            document.title = "Giáo Viên";
 
         }, [count]);
     }
@@ -43,9 +41,7 @@ export default function GiaoVien() {
             <div>
                 <div className="bar">
                     <div id='barright'>
-                        <input type = "text" placeholder = "HS_..." style = {{display="inline-block"}} onChange={settk(target.value)}></input>
-                        <button onClick={() => { history.push(`/timkiem/${tk}`)}}>Search</button>
-                        <a href="/xemphanhoi">Xemm phản hồi</a>
+                        <a href="/xemphanhoi">Xem phản hồi</a>
                         <div id='real_name'>Giáo viên: {name}</div>
                         <a href="/trangchu">Đăng Xuất</a>
                     </div>

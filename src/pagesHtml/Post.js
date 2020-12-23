@@ -9,7 +9,6 @@ export default function Post() {
         Axios.get(`https://web-ttcn.herokuapp.com/getFromID/${postID}`).then((data) => {
             setPost({ title: data.data[0].tieude, text: data.data[0].noidung })
         });
-        document.title = "Post";
     });
     return (
         <div>
