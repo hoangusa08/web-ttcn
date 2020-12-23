@@ -31,7 +31,7 @@ export default function MainPage() {
                             <div className="post" key={key} onClick={() => { history.push(`/post/${val.id}`) }}>
                                 <p className='post_tieude'>{val.tieude}</p>
                                 <p className='post_noidung'>{val.noidung.length > 400 ? val.noidung.substring(0, 400) : val.noidung}</p>
-                                <p className='post_comment'>Click chuột để xem chi tiết</p>
+                                <p className='post_comment'>Click để xem chi tiết</p>
                             </div>
                         )
                     })}
