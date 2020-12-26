@@ -83,11 +83,13 @@ a:hover{
 }
 
 .post_tieude{
+  text-align: center;
   font-weight: bold;
   padding: 0px 10px;
 }
 
 .tail_tieude{
+  text-align: center;
   font-weight: bold;
   padding: 0px 10px;
   color: white;
@@ -226,6 +228,6 @@ th{
 .tail_f{
   text-align: center;
   width: 100%;
-  position: absolute;
+  position: fixed;
   bottom: 0;
 }
