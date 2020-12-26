@@ -38,7 +38,7 @@ export default function Post() {
                         <b>Địa chỉ:</b> TT. Mộ Đức, Mộ Đức, Quảng Ngãi <br></br>
                         <b>Điện thoại:</b> +84-12-3456789 <br></br>
                         <b>Email:</b> thpttrankimdong@quangngai.edu.vn<br></br>
-                        <b>Website:</b> thpttrankimdong.edu.vn
+                        <b>Website:</b> thptphamvandong.edu.vn
                 </p>
                 </div>
                 <div className='mother_of_tail'>
