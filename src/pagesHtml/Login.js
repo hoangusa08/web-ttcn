@@ -77,20 +77,22 @@ export default function Login() {
                 </div>
                 <div id='Login_status'> {status}</div>
             </div>
-            <div className='tail'>
-                <p className='tail_tieude'>
-                    <center> CƠ QUAN CHỦ QUẢN </center> <br></br>
+            <div className='tail_f'>
+                <div className='tail'>
+                    <p className='tail_tieude'>
+                        <center> CƠ QUAN CHỦ QUẢN </center> <br></br>
                     TRƯỜNG THPT PHẠM VĂN ĐỒNG (PVĐ)
                 </p>
-                <p className='tail_noidung'>
-                    <b>Địa chỉ:</b> TT. Mộ Đức, Mộ Đức, Quảng Ngãi <br></br>
-                    <b>Điện thoại:</b> +84-12-3456789 <br></br>
-                    <b>Email:</b> thpttrankimdong@quangngai.edu.vn<br></br>
-                    <b>Website:</b> thpttrankimdong.edu.vn
+                    <p className='tail_noidung'>
+                        <b>Địa chỉ:</b> TT. Mộ Đức, Mộ Đức, Quảng Ngãi <br></br>
+                        <b>Điện thoại:</b> +84-12-3456789 <br></br>
+                        <b>Email:</b> thpttrankimdong@quangngai.edu.vn<br></br>
+                        <b>Website:</b> thpttrankimdong.edu.vn
                 </p>
+                </div>
+                <div className='mother_of_tail'>
+                    © 2020 - Trường THPT Phạm Văn Đồng - Quảng Ngãi
             </div>
-            <div className='mother_of_tail'>
-                © 2020 - Trường THPT Phạm Văn Đồng - Quảng Ngãi
             </div>
         </div>
     )

@@ -15,6 +15,7 @@ html{
 body{
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 .bar h2{
@@ -221,4 +222,11 @@ th{
   text-align: center;
   font-size: small;
   padding-bottom: 15px;
+
+}
+.tail_f{
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
